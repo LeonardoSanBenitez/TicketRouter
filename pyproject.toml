@@ -32,8 +32,8 @@ dev = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/LeonardoSanBenitez/TicketRouter"
-Repository = "https://github.com/LeonardoSanBenitez/TicketRouter"
+Homepage = "https://github.com/Libre-Ticket-Suite/TicketRouter"
+Repository = "https://github.com/Libre-Ticket-Suite/TicketRouter"
 
 [tool.hatch.build.targets.wheel]
 packages = ["ticket_router"]
