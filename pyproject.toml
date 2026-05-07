@@ -1,32 +1,39 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
 [project]
 name = "ticket-router"
 version = "0.1.0"
-description = "Route triaged tickets to the right destination — part of the Libre Ticket Suite"
+description = "TicketRouter — intelligent ticket routing to the right team, queue, or system"
 readme = "README.md"
 license = { text = "Apache-2.0" }
 requires-python = ">=3.10"
 authors = [
-    { name = "Leonardo Santiago Benitez Pereira", email = "lsbenitezpereira@gmail.com" }
+    { name = "Leonardo Santiago Benitez Pereira", email = "lsbenitezpereira@gmail.com" },
 ]
-keywords = ["itsm", "ticket", "routing", "devops", "aiops", "webhook"]
+keywords = ["itsm", "tickets", "routing", "automation", "orchestration"]
 classifiers = [
     "Programming Language :: Python :: 3",
     "Programming Language :: Python :: 3.10",
     "Programming Language :: Python :: 3.11",
     "Programming Language :: Python :: 3.12",
     "License :: OSI Approved :: Apache Software License",
+    "Operating System :: OS Independent",
     "Intended Audience :: Developers",
-    "Topic :: System :: Monitoring",
     "Topic :: Software Development :: Libraries :: Python Modules",
 ]
 dependencies = []
 
-[project.urls]
-Repository = "https://github.com/Libre-Ticket-Suite/TicketRouter"
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0",
+    "mypy>=1.0",
+]
 
-[build-system]
-requires = ["hatchling"]
-build-backend = "hatchling.build"
+[project.urls]
+Homepage = "https://github.com/LeonardoSanBenitez/TicketRouter"
+Repository = "https://github.com/LeonardoSanBenitez/TicketRouter"
 
 [tool.hatch.build.targets.wheel]
 packages = ["ticket_router"]
@@ -36,4 +43,4 @@ testpaths = ["tests"]
 
 [tool.mypy]
 strict = true
-explicit_package_bases = true
+ignore_missing_imports = true
