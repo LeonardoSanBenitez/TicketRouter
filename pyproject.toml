@@ -22,7 +22,7 @@ classifiers = [
 dependencies = []
 
 [project.urls]
-Repository = "https://github.com/LeonardoSanBenitez/TicketRouter"
+Repository = "https://github.com/Libre-Ticket-Suite/TicketRouter"
 
 [build-system]
 requires = ["hatchling"]
